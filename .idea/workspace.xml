@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="FIRST COMMIT">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="Initial Commit for Personal Site Demo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +169,7 @@
       <workItem from="1759682806919" duration="288000" />
       <workItem from="1759683488622" duration="6860000" />
       <workItem from="1759700396356" duration="180000" />
-      <workItem from="1759700601381" duration="318000" />
+      <workItem from="1759700601381" duration="778000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -245,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752165942898</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Initial Commit for Personal Site Demo">
+      <option name="closed" value="true" />
+      <created>1759701249738</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1759701249738</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +273,8 @@
       <path value="$PROJECT_DIR$/frontend" />
     </ignored-roots>
     <MESSAGE value="FIRST COMMIT" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIRST COMMIT" />
+    <MESSAGE value="Initial Commit for Personal Site Demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit for Personal Site Demo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
