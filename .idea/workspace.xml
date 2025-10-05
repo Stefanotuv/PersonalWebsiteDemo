@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="FIRST COMMIT">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="Python Script" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Stefanotuv&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Stefanotuv/PersonalWebsiteDemo.git",
+    "accountId": "98ad06bd-b9b9-42d5-98c5-4961d3b35cb6"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2zFP9LQhIfJ7dnvaM18fyKghl2O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.PersonalWebsite.executor": "Run",
+    "Django Server.Unnamed.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/frontend/src/pages",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "show.migrate.to.gradle.popup": "false",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/pages" />
+      <recent name="$PROJECT_DIR$/01_plans_and_procedures" />
+      <recent name="$PROJECT_DIR$/frontend/public" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/backend/dist_prod" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/00_project_info" />
+      <recent name="$PROJECT_DIR$/frontend/src/pages/personalsite/components" />
+      <recent name="$PROJECT_DIR$/00_scripts" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="PersonalWebsite" type="Python.DjangoServer" factoryName="Django server">
+      <module name="PersonalWebsite" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="" />
+      <created>1751323696318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751323696318</updated>
+      <workItem from="1751323697567" duration="7067000" />
+      <workItem from="1751407128374" duration="714000" />
+      <workItem from="1751408170969" duration="14665000" />
+      <workItem from="1751458384666" duration="5077000" />
+      <workItem from="1751624802511" duration="6054000" />
+      <workItem from="1751644442798" duration="599000" />
+      <workItem from="1751670651850" duration="349000" />
+      <workItem from="1751818698562" duration="32222000" />
+      <workItem from="1751899951196" duration="284000" />
+      <workItem from="1751900238910" duration="122000" />
+      <workItem from="1751901904663" duration="273000" />
+      <workItem from="1751902182268" duration="11620000" />
+      <workItem from="1752009751679" duration="1272000" />
+      <workItem from="1752015702496" duration="22082000" />
+      <workItem from="1752093090007" duration="7926000" />
+      <workItem from="1752101293521" duration="1255000" />
+      <workItem from="1752165451027" duration="1327000" />
+      <workItem from="1753046454193" duration="319000" />
+      <workItem from="1753089219500" duration="70000" />
+      <workItem from="1753089299465" duration="32000" />
+      <workItem from="1753210104934" duration="1112000" />
+      <workItem from="1753295394784" duration="1504000" />
+      <workItem from="1755289750569" duration="660000" />
+      <workItem from="1756056049559" duration="598000" />
+      <workItem from="1756811741790" duration="10000" />
+      <workItem from="1759053215024" duration="776000" />
+      <workItem from="1759447132655" duration="328000" />
+      <workItem from="1759578351135" duration="291000" />
+      <workItem from="1759651289412" duration="812000" />
+      <workItem from="1759679754816" duration="2199000" />
+      <workItem from="1759682806919" duration="288000" />
+      <workItem from="1759683488622" duration="6860000" />
+      <workItem from="1759700396356" duration="180000" />
+      <workItem from="1759700601381" duration="318000" />
+    </task>
+    <task id="LOCAL-00001" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1751902683526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751902683526</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1751902754883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751902754883</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1751902850649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751902850649</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1752080081806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752080081806</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1752080427228</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752080427228</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1752093451076</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752093451076</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1752093505706</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1752093505706</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1752100597192</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1752100597192</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FIRST COMMIT">
+      <option name="closed" value="true" />
+      <created>1752165942898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1752165942898</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/frontend" />
+    </ignored-roots>
+    <MESSAGE value="FIRST COMMIT" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIRST COMMIT" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/Welcome.tsx</url>
+          <line>165</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/photo_store/PhotoManagementPage.tsx</url>
+          <line>331</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Navbar.tsx</url>
+          <line>384</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
