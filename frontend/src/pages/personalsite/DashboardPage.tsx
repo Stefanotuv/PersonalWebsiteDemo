@@ -1,113 +1,3 @@
-// // src/pages/admin/MainAdminDashboard.tsx (or a suitable central admin path)
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import {
-//     BuildingStorefrontIcon, // For New Shop
-//     ShoppingCartIcon,       // For Social Shop (Old Shop)
-//     MegaphoneIcon,          // For Announcements
-//     NewspaperIcon,          // For Blog
-//     PhotoIcon,              // For Gallery
-//     UsersIcon,              // For User Management (if you add it)
-//     CogIcon,                // For Site Settings (if you add it)
-//     ChatBubbleLeftRightIcon // For Social Platforms
-//     // Add more icons as needed
-// } from '@heroicons/react/24/outline';
-//
-// const MainAdminDashboard: React.FC = () => {
-//     const adminSections = [
-//         {
-//             title: "New E-Commerce Shop",
-//             description: "Manage products, categories, options, and orders for the main e-commerce platform.",
-//             link: "/new-shop/admin/dashboard", // Links to the existing New Shop Admin Dashboard
-//             icon: BuildingStorefrontIcon,
-//             bgColor: "bg-indigo-600",
-//             hoverBgColor: "hover:bg-indigo-700",
-//             iconColor: "text-indigo-500",
-//         },
-//         {
-//             title: "Social Shop Products",
-//             description: "Manage products for the 'social' or older shop system.",
-//             link: "/social_shop/admin/manage-products", // Links to your AdminProductsListPage for the social shop
-//             icon: ShoppingCartIcon,
-//             bgColor: "bg-sky-600",
-//             hoverBgColor: "hover:bg-sky-700",
-//             iconColor: "text-sky-500",
-//         },
-//         {
-//             title: "Site Announcements",
-//             description: "Create and manage site-wide announcements and banners.",
-//             link: "/announcements", // Links to AdminAnnouncementsListPage
-//             icon: MegaphoneIcon,
-//             bgColor: "bg-emerald-600",
-//             hoverBgColor: "hover:bg-emerald-700",
-//             iconColor: "text-emerald-500",
-//         },
-//         {
-//             title: "Blog Management",
-//             description: "Administer blog posts, review content, and manage categories.",
-//             // Note: Your route is "/api/blog/admin/manage", which sounds like an API endpoint.
-//             // Ensure this is the correct frontend route for the blog admin page.
-//             // If it's different, update the link.
-//             link: "/api/blog/admin/manage", // Or the correct frontend path like "/blog/admin"
-//             icon: NewspaperIcon,
-//             bgColor: "bg-amber-600",
-//             hoverBgColor: "hover:bg-amber-700",
-//             iconColor: "text-amber-500",
-//         },
-//         {
-//             title: "Gallery Management",
-//             description: "Manage image galleries and individual images.",
-//             link: "/gallery/management", // Links to GalleryManagementPage
-//             icon: PhotoIcon,
-//             bgColor: "bg-rose-600",
-//             hoverBgColor: "hover:bg-rose-700",
-//             iconColor: "text-rose-500",
-//         },
-//         {
-//             title: "Social Platform Links",
-//             description: "Configure and manage social media platform links.",
-//             link: "/social/management", // Links to SocialPlatformManagementPage
-//             icon: ChatBubbleLeftRightIcon,
-//             bgColor: "bg-purple-600",
-//             hoverBgColor: "hover:bg-purple-700",
-//             iconColor: "text-purple-500",
-//         },
-//         // Add other sections based on your routes:
-//         // - Causes Management (/causes/create, /causes/edit/:id, /cause-types)
-//         // - Category Management (/manage/categories, /shop/categories) - Distinguish if needed
-//     ];
-//
-//     return (
-//         <div className="container mx-auto p-4 sm:p-6 lg:p-8">
-//             <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Main Admin Dashboard</h1>
-//             <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-//                 Welcome to the main administration hub. From here, you can navigate to different sections of the application to manage content and settings.
-//             </p>
-//
-//             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
-//                 {adminSections.map((section) => (
-//                     <div
-//                         key={section.title}
-//                         className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 flex flex-col"
-//                     >
-//                         <section.icon className={`h-12 w-12 ${section.iconColor} mb-4`} />
-//                         <h2 className="text-xl font-semibold text-gray-800 mb-2">{section.title}</h2>
-//                         <p className="text-gray-600 text-sm mb-5 flex-grow">{section.description}</p>
-//                         <Link
-//                             to={section.link}
-//                             className={`mt-auto inline-block ${section.bgColor} text-white font-medium px-6 py-2.5 rounded-lg ${section.hoverBgColor} text-sm transition-colors duration-150 ease-in-out text-center`}
-//                         >
-//                             Go to {section.title}
-//                         </Link>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
-//
-// export default MainAdminDashboard;
-
 
 // src/pages/admin/MainAdminDashboard.tsx
 
@@ -130,6 +20,7 @@ import {
     TruckIcon,
     ShoppingBagIcon,
 } from '@heroicons/react/24/outline'; // Using Heroicons directly as you provided
+import { SITE_OWNER_FULL_NAME, CV_PAGE_DOWNLOAD_FILENAME, CV_PAGE_ASK_MORE_INFO_MESSAGE } from './components/siteConfig.ts';
 
 const DashboardPage: React.FC = () => {
     const { user } = useAuth(); // Get user for greeting
@@ -174,8 +65,8 @@ const DashboardPage: React.FC = () => {
     return (
         <>
             <Helmet>
-                <title>Stefano Tuveri - Dashboard</title>
-                <meta name="description" content="Admin dashboard for Stefano Tuveri's personal website." />
+                <title>{SITE_OWNER_FULL_NAME}- Dashboard</title>
+                <meta name="description" content="Admin dashboard for {SITE_OWNER_FULL_NAME}'s personal website." />
             </Helmet>
 
             <div className="container mx-auto p-4 sm:p-6 lg:p-8">

@@ -1,124 +1,124 @@
 {
-  "name": "STEFANO TUVERI",
+  "name": "JOHN SMITH",
   "contact": {
-    "email": "stefano.tuveri@gmail.com",
-    "phone": "+44 (0) 7572364864",
-    "linkedin": "https://www.linkedin.com/in/stefanotuveri/"
+    "email": "john.smith.demo@email.com",
+    "phone": "+44 (0) 7123 456789",
+    "linkedin": "https://www.linkedin.com/in/johnsmith-demo/"
   },
   "education": [
     {
-      "year": "2016",
-      "degree": "CFA Institute - CFA"
+      "year": "2018",
+      "degree": "PMP - Project Management Professional"
     },
     {
-      "year": "2010-12",
-      "degree": "London Business School, London, UK - MBA degree",
-      "details": "The Chinese University of Hong Kong, Hong Kong, China"
+      "year": "2012-14",
+      "degree": "INSEAD, Fontainebleau, France - MBA degree",
+      "details": "Wharton School, University of Pennsylvania, USA - Exchange Program"
     },
     {
-      "year": "2002",
-      "degree": "Delft University of Technology, The Netherlands - MSc in Electronic Engineering, Erasmus exchange program"
+      "year": "2005",
+      "degree": "ETH Zurich, Switzerland - MSc in Mechanical Engineering, Exchange Program"
     },
     {
-      "year": "1998-04",
-      "degree": "Università Degli Studi di Cagliari, Italy - BA and MSc in Electronic Engineering, graduated with honors"
+      "year": "2000-06",
+      "degree": "Politecnico di Torino, Italy - BA and MSc in Mechanical Engineering, Summa Cum Laude"
     }
   ],
   "businessExperiences": [
     {
-      "period": "Jun 2020 - present",
-      "title": "Senior Director",
-      "company": "Oracle Business Value Services and Strategy Team – London, UK",
-      "summary": "Leading strategic technology transformation initiatives for Oracle's UK customers, focusing on delivering value-driven outcomes through coherent technology strategies, business alignment, and advanced digital solutions.",
+      "period": "Aug 2021 - Present",
+      "title": "Director of Cloud Strategy",
+      "company": "Innovate Corp – London, UK",
+      "summary": "Defining and executing the cloud adoption strategy for FTSE 100 clients, ensuring alignment with business objectives and driving digital innovation through scalable and cost-effective cloud solutions.",
       "keyAchievements": [
-        "Led multimillion dollars cloud opportunities for Major UK Financial Services and Telcos",
-        "Supported several large cloud and licenses deal across for major UK corporations"
+        "Spearheaded a £10M cloud transformation program for a leading financial services firm.",
+        "Developed and implemented a multi-cloud governance framework for a major retail client."
       ]
     },
     {
-      "period": "Aug 17 - May 20",
-      "title": "Head of Digital Delivery Enablement (DDE)",
-      "company": "HSBC UK, HSBC Digital Solutions – London, UK and Hong Kong",
-      "summary": "Spearheaded strategic and operational initiatives to enhance HSBC’s global digital transformation, optimizing processes and tooling strategies to accelerate delivery and improve business outcomes.",
+      "period": "Oct 18 - Jul 21",
+      "title": "Head of Agile Delivery",
+      "company": "Global Tech Solutions – London, UK and Singapore",
+      "summary": "Led a global team of Agile coaches and delivery managers to embed agile principles and practices across the organization, improving time-to-market and product quality.",
       "keyAchievements": [
-        "Operational Excellence: Oversaw the global tooling budget and lifecycle management, delivering tangible improvements in cost control and operational effectiveness.",
-        "Managed to reduce tech debt that led to over 20% cost reduction on the overall budget",
-        "Reduced the time from procurement to deployment from months to weeks, significantly enhancing the time-to-market for digital initiatives.",
-        "Enabled HSBC's global teams to adopt best-in-class DevOps practices and technologies, fostering innovation and delivery excellence."
+        "Reduced average project delivery time by 30% through the implementation of scaled agile frameworks.",
+        "Championed the adoption of a DevOps culture, resulting in a 50% reduction in deployment failures.",
+        "Managed a £5M budget for agile tooling and training, delivering a 15% ROI in the first year."
       ]
     },
     {
-      "period": "Jun - Jul 17",
-      "title": "Senior Manager CIO Advisory - Financial Services",
-      "company": "IBM – London, UK",
-      "summary": "Focused on hybrid cloud transformation strategies for financial services clients, delivering scalable and secure solutions to modernize legacy systems and improve operational agility.",
+      "period": "Jan 18 - Sep 18",
+      "title": "Senior Manager, Technology Advisory - Retail",
+      "company": "NextGen Consulting – London, UK",
+      "summary": "Advised leading retail clients on their digital transformation journey, focusing on e-commerce platforms, data analytics, and customer experience.",
       "keyAchievements": [
-        "Successfully led the design and adoption of hybrid cloud solutions, enabling clients to address regulatory requirements and scalability challenges."
+        "Designed and oversaw the implementation of a new omnichannel retail platform for a high-street fashion brand."
       ]
     }
   ],
   "earlyBusinessExperiences": [
     {
-      "period": "Sep 12 - Jun 16",
-      "title": "Manager – Digital Transformation practice",
-      "company": "Kearny Ltd (formerly A.T. Kearney) – London, UK",
-      "summary": "Selected Areas of Expertise: Strategy/ Market Assessment, Operations/ Negotiation, Commercial and Operational Due Diligence and Technology-Driven Transformation"
+      "period": "Nov 14 - Dec 17",
+      "title": "Manager – Digital Strategy Practice",
+      "company": "Stratagem Partners (formerly Global Consulting Group) – London, UK",
+      "summary": "Areas of expertise included market entry strategy, digital operating models, and technology due diligence for private equity clients."
     },
     {
-      "period": "Jan 14 - Dec 18",
-      "title": "Co-founder and Director",
-      "company": "TRIBEAROUND.COM – London, UK",
-      "summary": "Tribearound was a social platform that aims to connect people in real life by participating in common experiences like beers, cooking lessons, art masterclass etc.",
-      "link": "www.tribearound.com"
+      "period": "Feb 16 - Jan 20",
+      "title": "Co-founder and CEO",
+      "company": "EVENTLY.IO – London, UK",
+      "summary": "Evently was a platform for discovering and booking unique local experiences, connecting users with vetted event organizers.",
+      "link": "www.evently-demo.com"
     },
     {
-      "period": "Mar - Jul 2012",
-      "title": "Head of Bid Funding Departments at Lazada.vn (e-commerce start-up company)",
-      "company": "ROCKET INTERNET – Ho Chi Minh City, Vietnam",
-      "summary": "Responsibilities: Financial Reporting, BI, Pricing Strategies, Process design and People."
+      "period": "May - Sep 2014",
+      "title": "Head of Business Development at FoodieExpress (food delivery start-up)",
+      "company": "STARTUP LABS – Singapore",
+      "summary": "Responsible for market expansion, strategic partnerships, and financial modeling."
     },
     {
-      "period": "Sep - Dec 2011",
-      "title": "Financial Analyst SEEMEA (contract)",
-      "company": "GOOGLE, London, UK",
-      "summary": "Financial Analyses for SEEMEA regions to support local Agency Sales Teams."
+      "period": "Oct - Dec 2013",
+      "title": "Strategy Analyst, EMEA (internship)",
+      "company": "TECHCORP, London, UK",
+      "summary": "Conducted market analysis and competitive intelligence to support strategic planning for the EMEA region."
     },
     {
-      "period": "Apr - Aug 2011",
-      "title": "Senior Manager Associate – Online Sales Operation (contract)",
-      "company": "FACEBOOK, Dublin, Republic of Ireland",
-      "summary": "Revenues analyses and opportunity assessment for SME segments"
+      "period": "Jun - Sep 2013",
+      "title": "Product Marketing Manager (internship)",
+      "company": "SOCIAL MEDIA GIANT, Dublin, Republic of Ireland",
+      "summary": "Developed go-to-market strategies for new advertising products targeting the SMB market."
     },
     {
-      "period": "Nov 04 - Aug 10",
-      "title": "Senior Consultant - Management Consulting Practice",
-      "company": "ACCENTURE, Milan, Italy",
-      "summary": "Focus on Digital Transformation and Organizational Design"
+      "period": "Jan 07 - Aug 12",
+      "title": "Consultant - Technology Strategy & Architecture",
+      "company": "GLOBAL CONSULTANCY, Rome, Italy",
+      "summary": "Focused on IT-enabled business transformation and enterprise architecture for clients in the telecommunications and media industries."
     },
     {
-      "period": "Mar - Nov 2004",
-      "title": "Electronic Engineer",
-      "company": "ELECTRONIC ENGINEERING DEPARTMENT UNIVERSITA’ DI CAGLIARI, Italy",
-      "summary": "Created a model to represent software programs using Random Graph theory to identify macro-level patterns"
+      "period": "May - Dec 2006",
+      "title": "Research Engineer",
+      "company": "AUTOMOTIVE RESEARCH CENTER, Turin, Italy",
+      "summary": "Developed a simulation model for hybrid vehicle powertrains to optimize fuel efficiency."
     }
   ],
   "additionalInformation": {
-    "productivity": "MS Office, Confluence/Jira, Trello, Slack, Miro"
+    "productivity": "Microsoft Office Suite, Google Workspace, Jira, Confluence, Trello, Slack, Miro"
   },
   "skills": {
     "heading": "Tools, Technologies and Frameworks",
-    "list": "HTML/CSS/JS, Python/Django/Flask, Docker, Multi/Hybrid Cloud Deployment, Oracle Cloud Infrastructure, AWS, LM Studio, Msty.app"
+    "list": "SQL, Python, Tableau, Power BI, Cloud Computing (Azure, GCP), Agile Methodologies (Scrum, Kanban), SAFe, Figma"
   },
   "certifications": {
     "heading": "Certifications",
     "list": [
-      "Oracle Cloud Architect Associate and Professional, Oracle Cloud Multicloud Architect Associate, Oracle Data Science Professional, Oracle AI Solution expert (over 20 cloud certifications)",
-      "AWS Cloud Practitioner"
+      "Azure Solutions Architect Expert, Azure Data Scientist Associate",
+      "Certified ScrumMaster (CSM)",
+      "Google Cloud Certified - Professional Cloud Architect"
     ]
   },
   "language": {
     "heading": "Language",
-    "list": "English, Italian"
+    "list": "English (Fluent), Italian (Native), French (Conversational)"
   },
   "nationality": {
     "heading": "Nationality",
@@ -127,7 +127,7 @@
   "links_pages": {
     "heading": "Links/ Pages",
     "list": [
-      { "text": "YouTube Channel", "url": "https://www.youtube.com/@therandomhouse8114/videos" }
+      { "text": "Personal Blog", "url": "https://www.johnsmith-demo-blog.com" }
     ]
   }
 }

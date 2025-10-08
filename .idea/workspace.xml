@@ -5,8 +5,116 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="Initial Commit for Personal Site Demo">
-      <change afterPath="$PROJECT_DIR$/00_deploy_production/00 Full Deploy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy Cleaned Up" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy Cleaned Up.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/components/siteConfig.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00_deploy_production/00 Full Deploy" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/micro_stories/chef_feeding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/micro_stories/garden_harvest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/micro_stories/helping_hand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/micro_stories/little_library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/micro_stories/upcycled_art.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/assets/videos/Bee.mov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/alert/Alert.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/avatar/Avatar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/badge/Badge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/button/Button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/dropdown/Dropdown.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/dropdown/DropdownItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/images/ResponsiveImage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/images/ThreeColumnImageGrid.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/images/TwoColumnImageGrid.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/item_test_image/ItemTestImage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/modal/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/table/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/videos/AspectRatioVideo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/videos/FourIsToThree.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/videos/OneIsToOne.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/videos/SixteenIsToNine.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/videos/TwentyOneIsToNine.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/context/SidebarContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/data/cvData.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/data/cvData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/data/welcomeContent(v00).json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/Bee.mov" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/Bee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/BeeIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/BeeIconInverted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/BeeKind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/banners/BeeBanner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/banners/BeeBanner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/banners/BeeBanner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/banners/BeeBanner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/micro_stories/chef_feeding.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/micro_stories/garden_harvest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/micro_stories/helping_hand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/micro_stories/little_library.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/micro_stories/upcycled_art.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_banners/BeeBanner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_banners/BeeBanner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_banners/BeeBanner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_banners/BeeBannerSignIn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_blue_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_blue_kind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_blue_nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_green_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_green_kind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_green_nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_palestine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_palestine_free.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_palestine_kef.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_palestine_kef_free.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_pink_freak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_pink_freak_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_white_free.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_white_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_white_kind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_white_nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_yellow_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_yellow_kind.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/Bee_yellow_nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/EmptyBasket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBanner4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/new_set/banners/BeeBannerSignIn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/re_new_banners/BeeBanner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/re_new_banners/BeeBanner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/re_new_banners/BeeBanner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/images/re_new_banners/BeeBannerSignIn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AuthPages/ForgotPassword.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AuthPages/ForgotPassword.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AuthPages/ResetPassword.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AuthPages/ResetPassword.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/AboutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/AboutPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/CVPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/CVPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/DashboardPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/DashboardPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/OnlinePresencePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/OnlinePresencePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/Welcome(v00).tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/Welcome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/Welcome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/announcements/AdminAnnouncementsListPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/announcements/AnnouncementForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/announcements/CommunicationBanner.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/announcements/CreateAnnouncementPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/announcements/EditAnnouncementPage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/announcements/iconConfig.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/components/BannerPlaceholder.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/components/BannerPlaceholder.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Navbar(v00).tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +127,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="Python Script" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -34,12 +142,12 @@
     &quot;assignee&quot;: &quot;Stefanotuv&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Stefanotuv/PersonalWebsiteDemo.git",
-    "accountId": "98ad06bd-b9b9-42d5-98c5-4961d3b35cb6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Stefanotuv/PersonalWebsiteDemo.git&quot;,
+    &quot;accountId&quot;: &quot;98ad06bd-b9b9-42d5-98c5-4961d3b35cb6&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -60,7 +168,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/00_deploy_production",
+    "last_opened_file_path": "/Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/00_deploy_production_templates_and_scripts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,15 +192,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/00_deploy_production_templates_and_scripts" />
       <recent name="$PROJECT_DIR$/00_deploy_production" />
       <recent name="$PROJECT_DIR$/frontend/src/pages" />
       <recent name="$PROJECT_DIR$/01_plans_and_procedures" />
       <recent name="$PROJECT_DIR$/frontend/public" />
-      <recent name="$PROJECT_DIR$/frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/00_project_info" />
       <recent name="$PROJECT_DIR$/frontend/src/pages/personalsite/components" />
+      <recent name="$PROJECT_DIR$/00_project_info" />
       <recent name="$PROJECT_DIR$/00_scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend" />
@@ -172,7 +280,8 @@
       <workItem from="1759682806919" duration="288000" />
       <workItem from="1759683488622" duration="6860000" />
       <workItem from="1759700396356" duration="180000" />
-      <workItem from="1759700601381" duration="15853000" />
+      <workItem from="1759700601381" duration="17625000" />
+      <workItem from="1759852281984" duration="21212000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -262,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759702004098</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Initial Commit for Personal Site Demo">
+      <option name="closed" value="true" />
+      <created>1759850089933</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1759850089933</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +409,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/Welcome.tsx</url>
-          <line>165</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -302,8 +418,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Navbar.tsx</url>
-          <line>384</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/layout/Footer.tsx</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/pages/personalsite/Welcome.tsx</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

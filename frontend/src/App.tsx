@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import NotFound from "./pages/personalsite/components/NotFound.tsx";
 import { ScrollToTop } from "./pages/personalsite/layout/ScrollToTop.tsx";
 import ProtectedRoute from "./components/auth/ProtectedRoute.tsx";

@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../../api'; // Your API instance
 import FadeIn from '../personalsite/components/FadeIn.tsx'; // Your FadeIn component
-import WelcomePageBanner from "../../images/new_set/banners/BeeBannerSignIn.png";
 
 function ForgotPassword() {
   const [email, setEmail] = useState('');
@@ -36,7 +35,6 @@ function ForgotPassword() {
     <section
       className="h-screen bg-gray-50 dark:bg-gray-900"
       style={{
-        backgroundImage: `url(${WelcomePageBanner})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}

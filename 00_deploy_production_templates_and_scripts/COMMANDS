@@ -1,0 +1,2 @@
+npm run build:web
+cp -r /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/frontend/dist_web/* /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/backend/dist_prod

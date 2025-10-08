@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import React from "react";
+import { SITE_OWNER_FULL_NAME } from '../components/siteConfig.ts';
 
 const Footer = () => {
   return (
@@ -9,9 +10,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Copyright and Basic Info */}
         <div>
-          <h2 className="text-lg font-semibold text-white mb-2">Stefano Tuveri</h2>
+          <h2 className="text-lg font-semibold text-white mb-2">{ SITE_OWNER_FULL_NAME } </h2>
           <p className="mt-2 text-gray-400">Technologist with a Business Background | Passionate about Politics & Society</p>
-          <p className="text-sm mt-4 text-gray-500">© {new Date().getFullYear()} Stefano Tuveri. All rights reserved.</p>
+          <p className="text-sm mt-4 text-gray-500">© {new Date().getFullYear()} { SITE_OWNER_FULL_NAME } . All rights reserved.</p>
         </div>
 
         {/* Sitemap / Navigation */}

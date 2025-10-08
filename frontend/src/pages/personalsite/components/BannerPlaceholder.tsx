@@ -19,6 +19,7 @@ import default_avatar from "../../images/default_avatar.png"; // Fallback image 
 
 // Define the gallery slug for logos
 const LOGO_GALLERY_SLUG = 'page-logos'; // The specific gallery you'll create in Django admin
+import { SITE_OWNER_INITIALS } from './siteConfig.ts';
 
 const BannerPlaceholder: React.FC = () => {
   const [images, setImages] = useState<photoApi.GalleryImage[]>([]);
@@ -78,7 +79,7 @@ const BannerPlaceholder: React.FC = () => {
     return (
       <div className={`${containerClasses} bg-gray-700`}> {/* Darker gray for default */}
         <div className={contentClasses}>
-          <span className="text-5xl md:text-7xl font-bold">ST</span>
+          <span className="text-5xl md:text-7xl font-bold">{ SITE_OWNER_INITIALS } </span>
         </div>
       </div>
     );

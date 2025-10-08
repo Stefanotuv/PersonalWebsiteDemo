@@ -1,0 +1,236 @@
+# ===================================================================
+# DEPLOYING A DJANGO/REACT APP WITH GUNICORN, NGINX, AND CERTBOT
+# ===================================================================
+
+# -------------------------------------------------------------------
+# PREREQUISITES: Define your parameters before you begin
+# -------------------------------------------------------------------
+# [your_domain_name]             -> e.g., personalwebsitedemo.randomhouse.cc
+# [IP_address_remote_server]     -> e.g., 141.147.77.217
+# [local_path_to_ssh_key_folder] -> e.g., /Users/stefanotuveri/.ssh
+# [local_path_to_project_root]   -> e.g., /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo
+# -------------------------------------------------------------------
+
+
+### PART 1: Initial Server Setup & App Deployment ###
+
+# 1. SSH into the remote server
+# -------------------------------------------------------------------
+# Set correct permissions for your private key on your local machine
+sudo chmod 600 [local_path_to_ssh_key_folder]/ssh-demopersonalwebsite.key
+
+# Connect to the server
+ssh -i [local_path_to_ssh_key_folder]/ssh-demopersonalwebsite.key ubuntu@[IP_address_remote_server]
+
+
+# 2. Install essential system packages on the server
+# -------------------------------------------------------------------
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip python3-dev python3-venv gunicorn nginx git build-essential -y
+sudo reboot now # Reboot to apply all updates. You will be disconnected.
+
+
+# 3. Reconnect and deploy the application code
+# -------------------------------------------------------------------
+# Reconnect via SSH after the reboot
+ssh -i [local_path_to_ssh_key_folder]/ssh-demopersonalwebsite.key ubuntu@[IP_address_remote_server]
+
+# Clone your project from GitHub
+git clone https://github.com/Stefanotuv/PersonalWebsiteDemo.git
+
+# Navigate to the backend directory
+cd /home/ubuntu/PersonalWebsiteDemo/backend
+
+# Create a Python virtual environment
+python3 -m venv venvpersonalwebsite
+
+# Activate the virtual environment
+source venvpersonalwebsite/bin/activate
+
+# Upgrade pip and install Python dependencies
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Securely copy your .env file from your local machine to the server
+# (Run this command from a new terminal window on your local machine)
+scp -i [local_path_to_ssh_key_folder]/ssh-demopersonalwebsite.key [local_path_to_project_root]/backend/.env ubuntu@[IP_address_remote_server]:/home/ubuntu/PersonalWebsiteDemo/backend/.env
+
+
+# 4. Build the React frontend and collect Django static files
+# -------------------------------------------------------------------
+# On your LOCAL MACHINE, build the React app
+# npm run build:web
+
+# On your LOCAL MACHINE, copy the build files into a location accessible by the backend
+# cp -r [local_path_to_project_root]/frontend/dist_web/* [local_path_to_project_root]/backend/dist_prod
+# After this, commit and push the `dist_prod` folder to your git repo, then pull it on the server.
+# git add . ; git commit -m "Add production build" ; git push
+#
+# Back on the SERVER, pull the latest changes
+cd /home/ubuntu/PersonalWebsiteDemo
+git pull
+
+# Activate the virtual environment again and run collectstatic
+cd /home/ubuntu/PersonalWebsiteDemo/backend
+source venvpersonalwebsite/bin/activate
+python manage.py collectstatic
+
+
+# 5. Initial Firewall and Django Test (Optional but Recommended)
+# -------------------------------------------------------------------
+# This part is only to confirm Django is working before configuring Nginx.
+# The firewall rule for port 8000 can be removed later.
+sudo apt-get install iptables-persistent -y
+sudo iptables -I INPUT 5 -p tcp --dport 8000 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo netfilter-persistent save
+# Also open port 8000 in your Oracle Cloud VCN security list.
+
+# Test run gunicorn directly
+gunicorn --bind 0.0.0.0:8000 personalsite.wsgi:application
+# CHECKPOINT: Visit http://[IP_address_remote_server]:8000/admin. You should see the Django admin login.
+# Press CTRL+C to stop the test server.
+
+
+### PART 2: Configure Gunicorn and Nginx as System Services ###
+
+# 1. Create the Gunicorn Socket service file
+# -------------------------------------------------------------------
+sudo nano /etc/systemd/system/gunicorn.socket
+# Paste the following content:
+#
+# [Unit]
+# Description=gunicorn socket
+#
+# [Socket]
+# ListenStream=/run/gunicorn.sock
+#
+# [Install]
+# WantedBy=sockets.target
+
+
+# 2. Create the Gunicorn Service file
+# -------------------------------------------------------------------
+sudo nano /etc/systemd/system/gunicorn.service
+# Paste the following content. Note the reference to your .wsgi file.
+#
+# [Unit]
+# Description=gunicorn daemon
+# Requires=gunicorn.socket
+# After=network.target
+#
+# [Service]
+# User=ubuntu
+# Group=www-data
+# WorkingDirectory=/home/ubuntu/PersonalWebsiteDemo/backend
+# ExecStart=/home/ubuntu/PersonalWebsiteDemo/backend/venvpersonalwebsite/bin/gunicorn \
+#           --access-logfile - \
+#           --workers 3 \
+#           --bind unix:/run/gunicorn.sock \
+#           personalsite.wsgi:application
+#
+# [Install]
+# WantedBy=multi-user.target
+
+
+# 3. Start Gunicorn and grant permissions
+# -------------------------------------------------------------------
+# Add the 'ubuntu' user to the 'www-data' group so Nginx can communicate with Gunicorn
+sudo usermod -aG www-data ubuntu
+
+# Start and enable the Gunicorn socket
+sudo systemctl start gunicorn.socket
+sudo systemctl enable gunicorn.socket
+# CHECKPOINT: Check the status. It should be active.
+# sudo systemctl status gunicorn.socket
+
+
+# 4. Create the Nginx Server Block
+# -------------------------------------------------------------------
+sudo nano /etc/nginx/sites-available/personalwebsite
+# Paste the following, making sure to use your domain name, not the IP.
+#
+# server {
+#     listen 80;
+#     server_name [your_domain_name];
+#
+#     location / {
+#         root /home/ubuntu/PersonalWebsiteDemo/backend/dist_prod;
+#         try_files $uri $uri/ /index.html;
+#     }
+#
+#     location /media/ {
+#         alias /home/ubuntu/PersonalWebsiteDemo/backend/media/;
+#     }
+#
+#     location /static/ {
+#         alias /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles/;
+#     }
+#
+#     location ~ ^/(api|admin)/ {
+#         proxy_pass http://unix:/run/gunicorn.sock;
+#         proxy_set_header Host $host;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header X-Forwarded-Proto $scheme;
+#     }
+# }
+
+
+# 5. Enable the Nginx configuration and open firewall for web traffic
+# -------------------------------------------------------------------
+# Create the symbolic link to enable the site
+sudo ln -s /etc/nginx/sites-available/personalwebsite /etc/nginx/sites-enabled/
+
+# Remove the default Nginx config to avoid conflicts
+sudo rm /etc/nginx/sites-enabled/default
+
+# Test the Nginx configuration syntax
+sudo nginx -t
+# CHECKPOINT: It should report syntax is ok and test is successful.
+
+# Open the firewall for standard HTTP traffic
+sudo iptables -I INPUT 5 -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo netfilter-persistent save
+# Also open port 80 in your Oracle Cloud VCN.
+
+# Restart all services to apply changes
+sudo systemctl restart gunicorn
+sudo systemctl restart nginx
+# CHECKPOINT: Visit http://[your_domain_name]. You should see your React app.
+
+
+### PART 3: Secure The Site with HTTPS ###
+
+# 1. Configure DNS and Cloudflare
+# -------------------------------------------------------------------
+# a) In Cloudflare, create an 'A' record for [your_domain_name].
+# b) Point it to [IP_address_remote_server].
+# c) Set the Proxy status to "DNS Only" (grey cloud) for now.
+# d) Go to the "SSL/TLS" tab in Cloudflare.
+# e) Set the encryption mode to "Full (Strict)". THIS IS CRITICAL.
+
+
+# 2. Install Certbot and obtain SSL Certificate
+# -------------------------------------------------------------------
+sudo apt install certbot python3-certbot-nginx -y
+
+# Run Certbot. It will read your Nginx config and automate the setup.
+sudo certbot --nginx -d [your_domain_name]
+# Follow the prompts. When asked, choose the option to redirect HTTP to HTTPS.
+
+
+# 3. Open Firewall for HTTPS traffic and Finalize
+# -------------------------------------------------------------------
+# Open the firewall for secure web traffic
+sudo iptables -I INPUT 5 -p tcp --dport 443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo netfilter-persistent save
+# Also open port 443 in your Oracle Cloud VCN.
+
+# Nginx should have been reloaded by Certbot, but a restart is safe.
+sudo systemctl restart nginx
+
+# CHECKPOINT: Visit https://[your_domain_name]. Your site is now live and secure.
+# You can now re-enable the proxy (orange cloud) in Cloudflare if you wish.
+# ===================================================================
+# END OF SCRIPT
+# ===================================================================

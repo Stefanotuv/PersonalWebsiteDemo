@@ -2,30 +2,31 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { FaYoutube, FaMedium, FaGithub, FaLinkedin, FaGlobe, FaBookOpen } from 'react-icons/fa'; // Import relevant icons
+import { SITE_OWNER_FULL_NAME, CV_PAGE_DOWNLOAD_FILENAME, CV_PAGE_ASK_MORE_INFO_MESSAGE } from './components/siteConfig.ts';
 
 // Define your social links and pages
 const socialLinks = [
   {
     name: "YouTube Channel",
-    url: "https://www.youtube.com/@therandomhouse8114/videos",
+    url: "https://www.youtube.com/",
     description: "My personal YouTube channel where I share thoughts on technology, projects, and life.",
     icon: <FaYoutube className="text-red-600" />
   },
   {
     name: "LinkedIn Profile",
-    url: "https://www.linkedin.com/in/stefanotuveri/",
+    url: "https://www.linkedin.com/",
     description: "Connect with me professionally on LinkedIn for updates on my career and industry insights.",
     icon: <FaLinkedin className="text-blue-700" />
   },
   {
     name: "GitHub Profile",
-    url: "https://github.com/Stefanotuv", // Replace with your actual GitHub username
+    url: "https://github.com/", // Replace with your actual GitHub username
     description: "Explore my code repositories, open-source contributions, and personal projects.",
     icon: <FaGithub className="text-gray-800" />
   },
   {
     name: "Medium Articles",
-    url: "https://medium.com/@ste.tuveri", // Replace with your actual Medium username
+    url: "https://medium.com/", // Replace with your actual Medium username
     description: "Read my articles and thoughts on various tech and business topics.",
     icon: <FaMedium className="text-black" />
   },
@@ -41,8 +42,8 @@ const OnlinePresencePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Stefano Tuveri - Online Presence</title>
-        <meta name="description" content="Stefano Tuveri's presence across the web: social media, professional networks, and personal content." />
+        <title>{SITE_OWNER_FULL_NAME} - Online Presence</title>
+        <meta name="description" content="{SITE_OWNER_FULL_NAME}'s presence across the web: social media, professional networks, and personal content." />
       </Helmet>
 
       <div className="container mx-auto p-4 sm:p-8 bg-white shadow-lg rounded-lg my-8">

@@ -1,0 +1,227 @@
+
+/Users/stefanotuveri --> [.ssh folder location]
+141.147.77.217 --> [IP address remote server]
+
+# 141.147.77.217 demopersonalwebsite
+
+-- > you have already set up the VM on oacle locud you have the ssh key and the IP address
+
+sudo chmod 600 [.ssh folder location]/.ssh/ssh-demopersonalwebsite.key
+
+ssh -i [.ssh folder location]/.ssh/ssh-demopersonalwebsite.key ubuntu@[IP address remote server]
+
+sudo apt update && sudo apt upgrade -y && sudo apt install python3-pip python3-venv gunicorn nginx git -y
+
+sudo apt install python3-dev nginx build-essential
+
+sudo reboot now
+
+git clone https://github.com/Stefanotuv/PersonalWebsiteDemo.git
+
+
+cd /home/ubuntu/PersonalWebsiteDemo/backend
+
+python3 -m venv venvpersonalwebsite
+source venvpersonalwebsite/bin/activate
+
+# rm -rf venvpersonalwebsite -> in case you need to remove the folder for the wrong venv name and then recreate
+
+pip install --upgrade pip
+
+
+pip install -r requirements.txt
+scp -i [.ssh folder location]/.ssh/ssh-demopersonalwebsite.key [.ssh folder location]/OracleContent/PersonalWebsiteDemo/backend/.env ubuntu@[IP address remote server]:/home/ubuntu/PersonalWebsiteDemo/backend/.env
+
+
+*********************
+npm run build:web
+cp -r [.ssh folder location]/OracleContent/PersonalWebsiteDemo/frontend/dist_web/* [.ssh folder location]/OracleContent/PersonalWebsiteDemo/backend/dist_prod
+***********************
+
+
+
+cd /home/ubuntu/PersonalWebsiteDemo/backend
+source venvpersonalwebsite/bin/activate
+python manage.py collectstatic
+
+
+
+sudo apt-get install iptables-persistent
+sudo iptables -I INPUT 5 -p tcp --dport 8000 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo netfilter-persistent save
+
+open the port on the VCN -> port 8000
+
+[IP address remote server]:8000/admin -> test it should be online
+
+----------- End part one
+
+----------- Part two
+
+# this is not required but it is to test the same with the django started by the socket at the same address
+# gunicorn --bind 0.0.0.0:8000 personalwebsite.wsgi
+
+
+
+
+sudo nano /etc/systemd/system/gunicorn.socket
+# ---------------------------------------------------------------------------
+[Unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.sock
+#SocketUser=www-data
+# <-- This is the magic. The socket is owned by www-data
+#SocketGroup=www-data
+# <-- So Nginx can access it.
+#SocketMode=0660
+# <-- Sets read/write permissions for user and group
+
+[Install]
+WantedBy=sockets.target
+# ---------------------------------------------------------------------------
+
+
+sudo nano /etc/systemd/system/gunicorn.service
+
+# ---------------------------------------------------------------------------
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/PersonalWebsiteDemo/backend
+ExecStart=/home/ubuntu/PersonalWebsiteDemo/backend/venvpersonalwebsite/bin/gunicorn --access-logfile - --workers 3 --bind unix:/run/gunicorn.sock personalsite.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+# ---------------------------------------------------------------------------
+
+###
+
+sudo systemctl start gunicorn.socket
+sudo systemctl enable gunicorn.socket
+
+14) group permissions
+sudo chown ubuntu:www-data /run/gunicorn.sock
+sudo chmod 660 /run/gunicorn.sock
+
+15) check stautus
+# restart if you change any python file
+sudo systemctl daemon-reload
+#sudo systemctl restart gunicorn
+
+#sudo systemctl daemon-reexec
+
+sudo systemctl status gunicorn.socket
+-> should see active
+
+
+sudo nano /etc/nginx/sites-available/personalwebsite
+
+
+server {
+    listen 80;
+    server_name [IP address remote server];
+
+    # We will enable this later after installing an SSL certificate
+    # return 301 https://$host$request_uri;
+
+    # Location of React build files
+    location / {
+        # Be sure this is the correct path to your index.html
+        root /home/ubuntu/PersonalWebsiteDemo/backend/dist_prod;
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Location for user-uploaded media files
+    location /media/ {
+        alias /home/ubuntu/PersonalWebsiteDemo/backend/media/;
+    }
+
+    # Location for Django's collected static files (for admin)
+    location /static/ {
+        alias /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles/;
+    }
+
+    # Proxy for API and Admin requests to Gunicorn
+    location ~ ^/(api|admin)/ {
+        # THIS IS THE CRITICAL CHANGE
+        proxy_pass http://unix:/run/gunicorn.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+
+
+sudo ln -s /etc/nginx/sites-available/personalwebsite /etc/nginx/sites-enabled/
+
+sudo nginx -t
+
+sudo systemctl status nginx
+
+sudo systemctl restart gunicorn && sudo systemctl restart nginx && sudo systemctl reload nginx
+
+sudo apt-get install iptables-persistent
+sudo iptables -I INPUT 5 -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo netfilter-persistent save
+
+# --- issue not-found
+
+sudo gpasswd -a www-data ubuntu
+sudo -u www-data stat /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles
+sudo systemctl restart gunicorn && sudo systemctl restart nginx && sudo systemctl reload nginx
+# nginx server message
+
+cp -r /home/ubuntu/PersonalWebsiteDemo/backend/dist_prod/* /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles/
+
+sudo systemctl restart gunicorn && sudo systemctl restart nginx && sudo systemctl reload nginx
+# working message pre ssl
+
+----- end PArt teo
+----- start part three
+
+
+
+sudo apt install certbot python3-certbot-nginx -y
+
+sudo certbot --nginx -d personalwebsitedemo.randomhouse.cc
+
+--- open port on OCI
+
+sudo apt-get install iptables-persistent
+sudo iptables -I INPUT 5 -p tcp --dport 443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo netfilter-persistent save
+
+
+sudo systemctl restart gunicorn && sudo systemctl restart nginx && sudo systemctl reload nginx
+
+
+# wonrlgy created the other file to link the webstie remediation
+sudo rm /etc/nginx/sites-enabled/default
+
+sudo nano /etc/nginx/sites-available/personalwebsite
+--> chabge server_name [IP address remote server] into server_name personalwebsitedemo.randomhouse.cc;
+
+    Accedi al tuo account Cloudflare.
+
+    Seleziona il tuo dominio randomhouse.cc.
+
+    Nel menu a sinistra, vai su SSL/TLS.
+
+    Nella schermata "Overview" (o "Panoramica"), vedrai la modalità di crittografia SSL/TLS. È quasi certamente impostata su "Flessibile" ("Flexible").
+
+    CAMBIALA IN "COMPLETO (Strict)" O "FULL (Strict)".
+
+Perché questo risolve tutto?
+
+    Flessibile (sbagliato): Browser <—HTTPS—> Cloudflare <—HTTP—> Tuo Server
+
+    Completo (Strict) (corretto): Browser <—HTTPS—> Cloudflare <—HTTPS—> Tuo Server
+
+
