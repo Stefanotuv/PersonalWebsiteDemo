@@ -2,4 +2,8 @@ npm run build:web
 cp -r /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/frontend/dist_web/* /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/backend/dist_prod
 
 git pull
-sudo systemctl restart gunicorn && sudo systemctl restart nginx
+
+
+ cp -r /home/ubuntu/PersonalWebsiteDemo/backend/dist_prod/* /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles/
+
+ sudo systemctl restart gunicorn && sudo systemctl restart nginx
