@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { useAuth } from '../../context/AuthContext'; // Path to AuthContext
 import * as api from '../../api';
 import {useNavigate} from "react-router-dom"; // Path to main API functions
+import { SITE_OWNER_FULL_NAME, CV_PAGE_DOWNLOAD_FILENAME, CV_PAGE_ASK_MORE_INFO_MESSAGE } from './components/siteConfig.ts';
 
 const ProfilePage: React.FC = () => {
   const { user, isAuthenticated, isLoading: authLoading, login, logout } = useAuth(); // login is needed to update context user
@@ -115,7 +116,7 @@ const ProfilePage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Stefano Tuveri - My Profile</title>
+        <title>{SITE_OWNER_FULL_NAME} - My Profile</title>
         <meta name="description" content="Manage your personal profile and password." />
       </Helmet>
 

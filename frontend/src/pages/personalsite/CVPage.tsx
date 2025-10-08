@@ -31,8 +31,8 @@ const CVPage: React.FC = () => {
   }, []); // Empty dependency array means this runs once on mount
 
   // --- Email Subject for "Ask for More Information" ---
-  const emailSubject = "[from stefanotuveri.com] Inquiry from Personal Website";
-  const mailtoLink = `mailto:stefano.tuveri@gmail.com?subject=${encodeURIComponent(emailSubject)}`;
+  const emailSubject = "[from mariofungo.com] Inquiry from Personal Website";
+  const mailtoLink = `mailto:mario.fungo@gmail.com?subject=${encodeURIComponent(emailSubject)}`;
 
   return (
     <>
