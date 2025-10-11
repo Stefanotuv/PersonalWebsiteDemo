@@ -7,3 +7,6 @@ git pull
  cp -r /home/ubuntu/PersonalWebsiteDemo/backend/dist_prod/* /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles/
 
  sudo systemctl restart gunicorn && sudo systemctl restart nginx
+
+ user: admin@admin.com
+ pass: personalwebsite

@@ -5,10 +5,10 @@
 # -------------------------------------------------------------------
 # PREREQUISITES: Define your parameters before you begin
 # -------------------------------------------------------------------
-# [your_domain_name]             -> e.g., personalwebsitedemo.randomhouse.cc
+# [your_domain_name]             -> e.g., personalwebsitedemo.domain.cc
 # [IP_address_remote_server]     -> e.g., 141.147.77.217
-# [local_path_to_ssh_key_folder] -> e.g., /Users/stefanotuveri/.ssh
-# [local_path_to_project_root]   -> e.g., /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo
+# [local_path_to_ssh_key_folder] -> e.g., /Users/username/.ssh
+# [local_path_to_project_root]   -> e.g., /Users/username/PersonalWebsiteDemo
 # -------------------------------------------------------------------
 
 
@@ -36,7 +36,7 @@ sudo reboot now # Reboot to apply all updates. You will be disconnected.
 ssh -i [local_path_to_ssh_key_folder]/ssh-demopersonalwebsite.key ubuntu@[IP_address_remote_server]
 
 # Clone your project from GitHub
-git clone https://github.com/Stefanotuv/PersonalWebsiteDemo.git
+git clone https://github.com/cloned_location/PersonalWebsiteDemo.git
 
 # Navigate to the backend directory
 cd /home/ubuntu/PersonalWebsiteDemo/backend
@@ -80,9 +80,11 @@ python manage.py collectstatic
 # -------------------------------------------------------------------
 # This part is only to confirm Django is working before configuring Nginx.
 # The firewall rule for port 8000 can be removed later.
+
 sudo apt-get install iptables-persistent -y
 sudo iptables -I INPUT 5 -p tcp --dport 8000 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
 sudo netfilter-persistent save
+
 # Also open port 8000 in your Oracle Cloud VCN security list.
 
 # Test run gunicorn directly

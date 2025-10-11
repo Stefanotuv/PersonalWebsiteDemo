@@ -173,9 +173,9 @@ PersonalWebsiteDemo/
     cd PersonalWebsiteDemo/frontend
     npm run dev
     ```
-    *(Your Vite frontend will typically start at `http://localhost:5173`).*
+    *(Your Vite frontend will typically start at `http://localhost:3000`).*
 
-Access your application by navigating to `http://localhost:5173` in your web browser.
+Access your application by navigating to `http://localhost:3000` in your web browser.
 
 ## 5. Key API Endpoints
 
@@ -199,7 +199,7 @@ All API endpoints are prefixed with `/api/` (proxied by Vite in development).
     *   `POST/PATCH/DELETE /api/photos/galleries/{id}/` (Admin)
     *   `POST/PATCH/DELETE /api/photos/images/{id}/` (Admin)
 *   **Admin Interface:**
-    *   `http://localhost:5173/admin/` (Proxied by Vite to Django admin)
+    *   `http://localhost:3000/admin/` (Proxied by Vite to Django admin)
 
 ## 6. Deployment Considerations
 

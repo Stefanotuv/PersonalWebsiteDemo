@@ -49,14 +49,14 @@ export default function App() {
 
                 <Route element={<ProtectedRoute />}>
                 {/*<Route path="/profile" element={<UserProfiles />} />*/}
-
+                    <Route path="/profile" element={<ProfilePage />} />
                   {/* Routes requiring superuser status (ProtectedRouteSuperuser) */}
                   <Route element={<ProtectedRouteSuperuser />}>
                     <Route path="/documents" element={<DocumentManagementPage />} />
                     <Route path="/photos" element={<PhotoManagementPage />} />
                     <Route path="/dashboard" element={<DashboardPage />} />
                     <Route path="/galleries" element={<GalleryManagementPage />} />
-                    <Route path="/profile" element={<ProfilePage />} />
+
 
 
                   </Route>
