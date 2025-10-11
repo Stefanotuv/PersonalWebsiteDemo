@@ -5,8 +5,8 @@
 # -------------------------------------------------------------------
 # PREREQUISITES: Define your parameters before you begin
 # -------------------------------------------------------------------
-# [your_domain_name]             -> e.g., personalwebsitedemo.domain.cc
-# [IP_address_remote_server]     -> e.g., 141.147.77.217
+# [your_domain_name]             -> e.g., www.personalwebsitedemo.com
+# [IP_address_remote_server]     -> e.g., 132.145.39.49
 # [local_path_to_ssh_key_folder] -> e.g., /Users/username/.ssh
 # [local_path_to_project_root]   -> e.g., /Users/username/PersonalWebsiteDemo
 # -------------------------------------------------------------------

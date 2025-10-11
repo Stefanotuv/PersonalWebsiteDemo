@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="Initial Commit for Personal Site Demo">
-      <change afterPath="$PROJECT_DIR$/00_scripts_share/backup_PersonalWebsite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00_scripts_share/zip_log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy Cleaned Up" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy Cleaned Up" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/COMMANDS" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/COMMANDS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/info.md" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/info.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +92,8 @@
       <recent name="$PROJECT_DIR$/01_plans_and_procedures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/src/pages/personalsite/components" />
       <recent name="$PROJECT_DIR$/00_project_info" />
+      <recent name="$PROJECT_DIR$/frontend/src/pages/personalsite/components" />
       <recent name="$PROJECT_DIR$/00_scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/backend" />
@@ -181,6 +176,9 @@
       <workItem from="1759700601381" duration="17625000" />
       <workItem from="1759852281984" duration="31680000" />
       <workItem from="1760126953610" duration="1554000" />
+      <workItem from="1760206365591" duration="819000" />
+      <workItem from="1760207206666" duration="3000" />
+      <workItem from="1760207252227" duration="4174000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -302,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759967605498</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Initial Commit for Personal Site Demo">
+      <option name="closed" value="true" />
+      <created>1760206469741</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1760206469741</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
