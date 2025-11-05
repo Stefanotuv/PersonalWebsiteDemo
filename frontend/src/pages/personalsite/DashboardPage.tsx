@@ -51,7 +51,7 @@ const DashboardPage: React.FC = () => {
         {
             title: "Django Admin Backend",
             description: "Direct access to the core Django administration panel for advanced management.",
-            link: "http://localhost:8080/admin/", // Direct link to Django's built-in admin, ensure correct port
+            link: "/admin/", // Direct link to Django's built-in admin, ensure correct port
             isExternal: true, // Flag to open in new tab
             icon: CubeIcon,
             bgColor: "bg-gray-800",
