@@ -156,7 +156,7 @@ function Navbar() {
               ) : (
                 <>
                   <Link to={"/profile"} onClick={() => setIsOpen(false)} className={commonLinkClasses}>Profile</Link>
-                  {isStaff && (<a href="https://localhost:8000/admin/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className={`${commonLinkClasses} text-yellow-300`}>Django Admin</a>)}
+                  {isStaff && (<a href="/admin/" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className={`${commonLinkClasses} text-yellow-300`}>Django Admin</a>)}
                   <button onClick={() => { logout(); setIsOpen(false); }} className="w-full text-left block px-3 py-2 text-base font-medium text-white rounded-md hover:bg-gray-700 cursor-pointer">Sign Out</button>
                 </>
               )}
