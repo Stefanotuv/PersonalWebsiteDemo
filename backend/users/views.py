@@ -1,10 +1,16 @@
 # backend/users/views.py
 from rest_framework import generics, permissions, status
+from rest_framework.generics import RetrieveUpdateAPIView
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.exceptions import TokenError
-from .serializers import RegisterSerializer, LoginSerializer, UserSerializer, ChangePasswordSerializer
+
+from .models import CustomUser, UserProfile
+from .serializers import RegisterSerializer, LoginSerializer, UserSerializer, ChangePasswordSerializer, \
+    ProfilePictureSerializer
+
 
 # class RegisterView(generics.CreateAPIView):
 #     # This view is almost perfect. We just use it as is.
@@ -87,6 +93,8 @@ class UserProfileView(generics.RetrieveUpdateAPIView):
     serializer_class = UserSerializer
 
     def get_object(self):
+        # Ensure a UserProfile object exists for the user before fetching/updating
+        UserProfile.objects.get_or_create(user=self.request.user)
         return self.request.user
 
 
@@ -103,3 +111,27 @@ class ChangePasswordView(generics.UpdateAPIView):
 
 # DELETED: All password reset, social link, and profile picture views for now.
 # FOCUS ON THE CORE: Login, Logout, Register, View/Update Profile.
+
+class UserProfilePictureUpdateView(generics.UpdateAPIView): # <--- NEW VIEW FOR PICTURE
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = ProfilePictureSerializer
+    # Use PATCH for partial update (only the picture field)
+    http_method_names = ['patch'] # Restrict to PATCH requests
+
+    def get_object(self):
+        # Get the related UserProfile object for the authenticated user
+        profile, created = UserProfile.objects.get_or_create(user=self.request.user)
+        return profile
+
+    def update(self, request, *args, **kwargs):
+        instance = self.get_object()
+        # Pass partial=True for PATCH requests
+        serializer = self.get_serializer(instance, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+
+        # Return the updated profile picture URL (or the full profile for convenience)
+        return Response({
+            "detail": "Profile picture updated successfully",
+            "profile_picture": instance.profile_picture.url if instance.profile_picture else None
+        }, status=status.HTTP_200_OK)

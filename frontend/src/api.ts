@@ -118,5 +118,17 @@ api.interceptors.response.use(
 export const getUserProfile = async () => { try { const res = await api.get("/api/users/profile/"); return res.data; } catch (error) { console.error("Error fetching profile:", error); throw error; } };
 export async function updateUserProfile(updatedData: any) { const res = await api.patch("/api/users/update/", updatedData); return res.data; }
 export const updateUserProfilePicture = async (formData: FormData) => { try { const res = await api.patch("/api/users/profile/picture/", formData); return res.data; } catch (error) { console.error("Error updating profile picture:", error); throw error; } };
-
+// --- ADDED API FUNCTION: Change Password ---
+export const changePassword = async (oldPassword: string, newPassword: string) => {
+    try {
+        const res = await api.patch("/api/users/change-password/", {
+            old_password: oldPassword,
+            new_password: newPassword
+        });
+        return res.data;
+    } catch (error) {
+        console.error("Error changing password:", error);
+        throw error;
+    }
+};
 export default api;

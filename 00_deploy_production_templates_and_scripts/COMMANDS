@@ -8,5 +8,8 @@ ssh -i  /Users/namesurname/.ssh/ssh-demopersonalwebsite.key ubuntu@[IP_ADDRESS]
 
  sudo systemctl restart gunicorn && sudo systemctl restart nginx
 
- user: admin@admin.com
+ admin user: admin@admin.com
+ pass: personalwebsite
+
+ user:mario.fungo@mariofungo.com
  pass: personalwebsite

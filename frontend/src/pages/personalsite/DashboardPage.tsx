@@ -69,7 +69,7 @@ const DashboardPage: React.FC = () => {
                 <meta name="description" content="Admin dashboard for {SITE_OWNER_FULL_NAME}'s personal website." />
             </Helmet>
 
-            <div className="container mx-auto p-4 sm:p-6 lg:p-8">
+            <div className="container mx-auto p-4 sm:p-6 lg:p-8 mt-6">
                 <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center">
                     Welcome to Your Dashboard{user?.first_name ? `, ${user.first_name}` : ''}!
                 </h1>
