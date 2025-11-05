@@ -1,51 +1,51 @@
 {
   "personalBio": {
-    "tagline": "Technologist with a Business Background | Passionate about Politics & Society",
-    "description": "I’m a technologist at heart, excited about how technology can make a real difference in business and beyond. In presales, I love connecting great ideas with practical solutions that help people work smarter. I’m also passionate about politics and community issues, and I’m always looking to better understand the world and find ways to make a positive impact."
+    "tagline": "Epistemological Nexus Operator | A Confluence of Quantitative Rigor and Socio-Political Discourse.",
+    "description": "I operate at the zenith of the digital-commercial-societal triad. My professional mandate, primarily in presales, is rooted in a profound desire to translate abstract technological *potential* into demonstrable fiscal *reality*. Separately, I maintain an active engagement with the tumultuous currents of geopolitics, a critical necessity for any individual attempting to secure appropriate server hosting and maintain theoretical solvency in this chaotic epoch."
   },
   "bannerMessages": [
-    "Welcome to my personal website!",
-    "Thanks for expressing interest in knowing me better.",
-    "Hope you enjoy the content and get in touch!",
-    "Exploring the intersection of Technology, Business, Politics, and Society."
+    "A formal salutation upon entering this digital dossier.",
+    "Your expression of curiosity has been duly logged and appreciated.",
+    "May this intellectual offering prove marginally less vexing than typical web content.",
+    "Exploring the critical intersection of Applied Digital Metaphysics and Capital Teleological Praxis."
   ],
   "interests": [
     {
       "id": "tech",
-      "title": "Technology & Creation",
-      "quote": "The man who has no imagination has no wings.",
-      "quoteSource": "Muhammad Ali",
-      "description": "My fascination with technology led me not just to learn, but to build. While my formal background is not in pure development, my passion drives me to create my own solutions, from dynamic websites to autonomous robot cars. I believe in technology as a tool for empowerment and innovation, fostering deep understanding by doing.",
+      "title": "Applied Digital Metaphysics: The Creation of Simulacra",
+      "quote": "A man chooses, a slave obeys.",
+      "quoteSource": "Andrew Ryan, BioShock",
+      "description": "While my professional life is often confined to the mere *orchestration* of pre-existing digital solutions, my nocturnal endeavors involve the ambitious construction of elaborate, often over-engineered, projects. These typically include complex distributed systems or, conversely, a small, highly aggressive autonomous Roomba named 'Calculus.' It is a necessary exercise to maintain a critical distance from the constraints of the material world.",
       "iconClass": "FaLaptopCode",
       "bgColor": "bg-green-200",
       "textColor": "text-green-800"
     },
     {
       "id": "business",
-      "title": "Business & Execution",
-      "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
-      "quoteSource": "Aristotle",
-      "description": "My professional journey has given me a unique perspective at the intersection of technology and business. With a background spanning management consulting, presales, and core tech roles, I understand how strategic vision translates into tangible outcomes. My focus is on leveraging technology to drive business value, optimize operations, and facilitate growth.",
+      "title": "Operationalizing Capital: Teleological Praxis",
+      "quote": "I need a weapon.",
+      "quoteSource": "Master Chief, Halo",
+      "description": "My trajectory through management consulting and technical sales has refined my capacity for *execution*—the essential process of converting PowerPoint slides into actual revenue streams. My focus remains on achieving maximum ROI, primarily to fund my expanding collection of 19th-century academic monographs and a deep-seated need to categorize all business processes as either 'Critical Path' or 'Existential Threat.'",
       "iconClass": "FaHandshake",
       "bgColor": "bg-blue-200",
       "textColor": "text-blue-800"
     },
     {
       "id": "politics",
-      "title": "Politics & Geopolitics",
-      "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-      "quoteSource": "Nelson Mandela",
-      "description": "Beyond the code, I'm deeply engaged with political discourse and global affairs. Understanding geopolitical shifts, policy impacts, and societal structures is crucial for responsible innovation. I believe in contributing to a well-informed public dialogue on these critical issues.",
+      "title": "Geopolitical Instability: Macro-Level Power Dynamics",
+      "quote": "War... has changed.",
+      "quoteSource": "Naked Snake/Solid Snake, Metal Gear Solid 4",
+      "description": "My engagement with the political apparatus is not merely a hobby; it is a critical necessity. One must constantly analyze the shifting global power matrix, especially when assessing the viability of long-term investments in high-quality ergonomic office chairs and the stability of supply chains for artisanal coffee. Responsible innovation mandates an understanding of who controls the municipal zoning laws.",
       "iconClass": "FaBullhorn",
       "bgColor": "bg-purple-200",
       "textColor": "text-purple-800"
     },
     {
       "id": "social",
-      "title": "Social Impact & Human Rights",
-      "quote": "The time is always right to do what is right.",
-      "quoteSource": "Martin Luther King, Jr.",
-      "description": "My conviction is in giving back and promoting a redistribution of opportunity and dignity. This encompasses a fervent dedication to human rights and the absolute protection of children, who represent our future. I hold a firm belief that through collective effort and shared responsibility, it can always get better.",
+      "title": "Ethical Obligations: The Rebalancing of Societal Entropy",
+      "quote": "If you want to save the world, save a kid.",
+      "quoteSource": "Spike Spiegel, Cowboy Bebop",
+      "description": "I maintain a rigorous commitment to the abstract concepts of *Dignity* and *Equity*. This dedication manifests in a quiet, unwavering belief that all sentient beings deserve adequate access to high-speed fiber internet and protection from localized existential dread. My primary focus remains the defense of children's rights, as they are the only ones who truly understand TikTok's algorithm, a power that must be protected at all costs.",
       "iconClass": "FaGlobeAmericas",
       "bgColor": "bg-yellow-200",
       "textColor": "text-yellow-800"
