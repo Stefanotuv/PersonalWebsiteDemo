@@ -1,8 +1,8 @@
 npm run build:web
-cp -r /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/frontend/dist_web/* /Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/backend/dist_prod
+cp -r /Users/namesurname/path/to/PersonalWebsiteDemo/frontend/dist_web/* /Users/namesurname/path/to/PersonalWebsiteDemo/backend/dist_prod
 
 git pull
-
+ssh -i  /Users/namesurname/.ssh/ssh-demopersonalwebsite.key ubuntu@[IP_ADDRESS]
 
  cp -r /home/ubuntu/PersonalWebsiteDemo/backend/dist_prod/* /home/ubuntu/PersonalWebsiteDemo/backend/staticfiles/
 

@@ -94,7 +94,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
 
-
     'users',
     'document_store',
     'photo_store',

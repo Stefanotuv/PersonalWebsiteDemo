@@ -5,9 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c21c1ff7-1313-4093-ba90-f6a693b02b9a" name="Changes" comment="Initial Commit for Personal Site Demo">
-      <change afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/.env" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy Cleaned Up" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/00 Full Deploy Cleaned Up" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/COMMANDS" beforeDir="false" afterPath="$PROJECT_DIR$/00_deploy_production_templates_and_scripts/COMMANDS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/personalsite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/personalsite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/Bee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/BeeIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/BeeIconNew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/BeeIconTab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_0.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_0.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_11.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_11.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_12.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_12.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_13.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_13.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_6.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_7.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_7.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_8.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_8.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon_9.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon_9.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/images/BeeIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/images/BeeIconInverted.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/AppLayoutNewLoggedIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/personalsite/layout/AppLayoutNewLoggedIn.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +90,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/stefanotuveri/OracleContent/PersonalWebsiteDemo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/stefanotuveri/OracleContent/PersonalWebsiteDemo/00_deploy_production_templates_and_scripts&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -85,18 +114,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/00_deploy_production_templates_and_scripts" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/00_deploy_production" />
       <recent name="$PROJECT_DIR$/frontend/src/pages" />
       <recent name="$PROJECT_DIR$/01_plans_and_procedures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$/00_project_info" />
       <recent name="$PROJECT_DIR$/frontend/src/pages/personalsite/components" />
       <recent name="$PROJECT_DIR$/00_scripts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/backend" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,10 +157,13 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
-        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -178,7 +210,10 @@
       <workItem from="1760126953610" duration="1554000" />
       <workItem from="1760206365591" duration="819000" />
       <workItem from="1760207206666" duration="3000" />
-      <workItem from="1760207252227" duration="4174000" />
+      <workItem from="1760207252227" duration="6846000" />
+      <workItem from="1762097820065" duration="3687000" />
+      <workItem from="1762206819739" duration="1405000" />
+      <workItem from="1762375997595" duration="483000" />
     </task>
     <task id="LOCAL-00001" summary="FIRST COMMIT">
       <option name="closed" value="true" />
@@ -308,7 +343,23 @@
       <option name="project" value="LOCAL" />
       <updated>1760206469741</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Initial Commit for Personal Site Demo">
+      <option name="closed" value="true" />
+      <created>1760226544078</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1760226544078</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Initial Commit for Personal Site Demo">
+      <option name="closed" value="true" />
+      <created>1760226549581</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1760226549581</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

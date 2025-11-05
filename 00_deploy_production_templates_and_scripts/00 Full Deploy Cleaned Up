@@ -1,3 +1,18 @@
+
+Local Deployment
+-> fork github
+-> open pycharm and select folder
+-> clone the repo
+
+install the venv
+
+venvmypersonalwebsite
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
+
 # ===================================================================
 # DEPLOYING A DJANGO/REACT APP WITH GUNICORN, NGINX, AND CERTBOT
 # ===================================================================
@@ -6,7 +21,7 @@
 # PREREQUISITES: Define your parameters before you begin
 # -------------------------------------------------------------------
 # [your_domain_name]             -> e.g., www.personalwebsitedemo.com
-# [IP_address_remote_server]     -> e.g., 132.145.39.49
+# [IP_address_remote_server]     -> e.g., 141.147.77.217
 # [local_path_to_ssh_key_folder] -> e.g., /Users/username/.ssh
 # [local_path_to_project_root]   -> e.g., /Users/username/PersonalWebsiteDemo
 # -------------------------------------------------------------------
@@ -195,6 +210,8 @@ sudo iptables -I INPUT 5 -p tcp --dport 80 -m conntrack --ctstate NEW,ESTABLISHE
 sudo netfilter-persistent save
 # Also open port 80 in your Oracle Cloud VCN.
 
+sudo chmod 751 /home/ubuntu
+
 # Restart all services to apply changes
 sudo systemctl restart gunicorn
 sudo systemctl restart nginx
@@ -236,3 +253,14 @@ sudo systemctl restart nginx
 # ===================================================================
 # END OF SCRIPT
 # ===================================================================
+
+
+https://myaccount.google.com/apppasswords
+
+ssh -i /Users/stefanotuveri/.ssh/ssh-projectchange.key ubuntu@132.145.35.212
+
+sudo apt-get install iptables-persistent -y
+sudo iptables -I INPUT 5 -p tcp --dport 465 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+sudo iptables -I INPUT 5 -p tcp --dport 587 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+
+sudo netfilter-persistent save
