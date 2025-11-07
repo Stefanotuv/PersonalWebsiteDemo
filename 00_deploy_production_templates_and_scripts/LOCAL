@@ -1,3 +1,10 @@
+# it assumes that you have changed the name of the repo in PersonalWebsite
+# from PersonalWebsiteDemo when forking otherwise you will get an error
+git clone https://github.com/[Your GitHub Account]/PersonalWebsite.git
+
+# if you plan to use your own workflow then use the original one
+git clone https://github.com/Stefanotuv/PersonalWebsiteDemo.git
+
 Install nodejs
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
