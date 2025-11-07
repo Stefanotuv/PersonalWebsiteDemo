@@ -4,4 +4,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 restart termninal
 
-nvm install --lts in the front end folder
+# --- in the front end folder
+nvm install --lts
+
+npm install
