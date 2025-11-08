@@ -1,27 +1,46 @@
-# it assumes that you have changed the name of the repo in PersonalWebsite
+
+
+1) install nodejs
+2) install virtual environment
+3) move the .env variables
+
+
+-----
+# Depeneding on the way with clone or fork the repo you may have different names
+
+# the below assumes that you have changed the name of the repo in PersonalWebsite
 # from PersonalWebsiteDemo when forking otherwise you will get an error
 git clone https://github.com/[Your GitHub Account]/PersonalWebsite.git
 
 # if you plan to use your own workflow then use the original one
 git clone https://github.com/Stefanotuv/PersonalWebsiteDemo.git
+----
 
-Install nodejs
+1)  Install nodejs
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 restart termninal
 
-# --- in the front end folder
+cd frontend
+# --- in the frontend folder
 nvm install --lts
 
 npm install
+
+2) install the virtual env
 
 cd [path to venvironments]/
 python3 -m venv venvpersonalwebsite
 source venvpersonalwebsite/bin/activate
 
+3) set up django
 # Upgrade pip and install Python dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
+
+4) copy the variables .env
+
+5) run django
 
 python manage.py runserver 0.0.0.0/8000
