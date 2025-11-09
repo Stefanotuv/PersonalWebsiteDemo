@@ -17,6 +17,7 @@ urlpatterns = [
 
     path('api/photos/', include('photo_store.urls')), # This will include /api/photos/galleries/ and /api/photos/images/
 
+    path('backend/', include('backend.urls')),
 ]
 
 # --- CRITICAL: SERVE MEDIA FILES ONLY IN DEVELOPMENT (DEBUG=True) ---

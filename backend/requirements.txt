@@ -6,3 +6,4 @@ pillow
 load_dotenv
 certifi
 gunicorn
+requests

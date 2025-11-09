@@ -93,7 +93,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
-
+    'backend',
     'users',
     'document_store',
     'photo_store',
